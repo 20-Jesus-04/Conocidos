@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Para Olenka, mi color rosa</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="hearts-canvas"></canvas>
+
+<audio id="bg-music" loop preload="auto">
+  <source src="media/Rocko_y_Blasty--Besitos_de_Colores.mp3" type="audio/mpeg">
+</audio>
+
+<button id="music-toggle" title="Reproducir música">♪</button>
+
+<!-- PORTADA -->
+<section class="cover" id="cover">
+  <div class="envelope" id="envelope">
+    <div class="envelope-flap"></div>
+    <div class="envelope-body">
+      <p class="envelope-text">Para ti, Olenka</p>
+      <span class="seal">♡</span>
+    </div>
+  </div>
+  <p class="hint">Toca el sobre para abrir mi carta</p>
+</section>
+
+<!-- CONTENIDO DE LA CARTA -->
+<main id="letter" class="letter hidden">
+
+  <section class="page intro">
+    <div class="stars"></div>
+    <h1 class="title">Para Olenka <span class="heart">♡</span></h1>
+    <p class="subtitle">1 año desde que te conocí · 7 meses siendo tu novio</p>
+    <p class="typing-quote" id="typingQuote"></p>
+    <div class="scroll-down">
+      <span>desliza para leer</span>
+      <div class="arrow"></div>
+    </div>
+  </section>
+
+  <section class="page counter-section">
+    <div class="sparkles"></div>
+    <div class="content-box fade-in">
+      <h2>Tiempo siendo mi cuchocha favorita</h2>
+      <p class="counter-caption">Desde que somos novios, esto es lo que llevamos contando</p>
+      <div class="counter-grid">
+        <div class="counter-item">
+          <span class="counter-number" id="cDays">0</span>
+          <span class="counter-label">días</span>
+        </div>
+        <div class="counter-item">
+          <span class="counter-number" id="cHours">0</span>
+          <span class="counter-label">horas</span>
+        </div>
+        <div class="counter-item">
+          <span class="counter-number" id="cMinutes">0</span>
+          <span class="counter-label">minutos</span>
+        </div>
+        <div class="counter-item">
+          <span class="counter-number" id="cSeconds">0</span>
+          <span class="counter-label">segundos</span>
+        </div>
+      </div>
+      <p class="counter-footer">...y sigue sumando, cerquillito mío ♡</p>
+    </div>
+  </section>
+
+  <section class="page story">
+    <div class="petals"></div>
+    <div class="content-box fade-in">
+      <h2>El día que todo cambió</h2>
+      <p>
+        Salí volando de la universidad ese día. Solo pensaba en llegar a casa porque era
+        el cumpleaños de mi primo, no esperaba nada más que una tarde normal en familia.
+      </p>
+      <p>
+        Pero ahí estabas tú. Y sin avisar, sin pedir permiso, el tiempo se detuvo.
+        No sabía que ese día mi vida iba a cambiar por completo, que una persona
+        podría llegar y, sin decir mucho, parar el mundo entero solo para mirarla a ella.
+      </p>
+      <p class="highlight">Esa persona eras tú, Olenka.</p>
+    </div>
+  </section>
+
+  <section class="page story alt">
+    <div class="petals"></div>
+    <div class="content-box fade-in">
+      <h2>El color rosa de mi vida</h2>
+      <p>
+        Antes de ti, mi vida tenía sus colores, sus rutinas, sus días iguales.
+        Desde que llegaste, todo se tiñó de rosa. No exagero: hasta los días grises
+        encontraron una forma de brillar un poco más solo porque tú existes en ellos.
+      </p>
+      <p>
+        Llevamos siete meses de relación y un año desde que el destino decidió
+        cruzarnos ese día, sin pedirle permiso a nadie. Y cada día contigo
+        confirma que fue la mejor casualidad que me pudo pasar.
+      </p>
+    </div>
+  </section>
+
+  <section class="page gallery-section">
+    <div class="content-box fade-in">
+      <h2>Nuestros momentos</h2>
+      <p class="gallery-caption">Cada foto es un latido que quiero recordar para siempre</p>
+      <div class="gallery">
+        <div class="photo-frame"><div class="photo-placeholder"><img src="media/img1.jpg" alt="Foto 1"></div></div>
+        <div class="photo-frame"><div class="photo-placeholder"><img src="media/img2.jpg" alt="Foto 2"></div></div>
+        <div class="photo-frame"><div class="photo-placeholder"><img src="media/img3.jpg" alt="Foto 3"></div></div>
+        <div class="photo-frame"><div class="photo-placeholder"><img src="media/img4.jpg" alt="Foto 4"></div></div>
+        <div class="photo-frame"><div class="photo-placeholder"><img src="media/img5.jpg" alt="Foto 5"></div></div>
+        <div class="photo-frame"><div class="photo-placeholder"><img src="media/img6.jpg" alt="Foto 6"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="page nicknames">
+    <div class="petals"></div>
+    <div class="content-box fade-in">
+      <h2>Mi cuchocha, mi cerquillito</h2>
+      <p>
+        Hay nombres que se inventan sin querer y terminan siendo los más bonitos
+        que uno puede decir. "Cuchocha" se me salió un día sin pensarlo, y desde
+        entonces es tuyo, solo tuyo. Igual que "cerquillito", que ahora no puedo
+        decir sin sonreír al pensar en ti.
+      </p>
+      <p>
+        No son solo apodos, son la forma en la que mi corazón decidió llamarte
+        cuando las palabras normales ya no eran suficientes para describir lo
+        que siento.
+      </p>
+      <div class="nickname-cards">
+        <div class="nickname-card">
+          <span class="nickname-emoji">♡</span>
+          <p class="nickname-word">Cuchocha</p>
+          <p class="nickname-desc">mi persona favorita en el mundo entero</p>
+        </div>
+        <div class="nickname-card">
+          <span class="nickname-emoji">♡</span>
+          <p class="nickname-word">Cerquillito</p>
+          <p class="nickname-desc">la sonrisa que cambió mis días para siempre</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="page reasons">
+    <div class="stars"></div>
+    <div class="content-box fade-in">
+      <h2>Razones por las que te amo</h2>
+      <div class="reasons-grid">
+        <div class="reason-card"><span class="reason-icon">✿</span><p>Por tu forma de reírte, que me hace olvidar todo lo demás.</p></div>
+        <div class="reason-card"><span class="reason-icon">✿</span><p>Por cuidarme incluso en los días en que ni yo me cuido.</p></div>
+        <div class="reason-card"><span class="reason-icon">✿</span><p>Por hacer que lo simple se sienta como lo más especial del mundo.</p></div>
+        <div class="reason-card"><span class="reason-icon">✿</span><p>Por tu paciencia, que ha sido refugio en mis días difíciles.</p></div>
+        <div class="reason-card"><span class="reason-icon">✿</span><p>Por ser cómplice de mis locuras y mis silencios.</p></div>
+        <div class="reason-card"><span class="reason-icon">✿</span><p>Por escogerme, sin condiciones, todos estos meses.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="page promises">
+    <div class="petals"></div>
+    <div class="content-box fade-in">
+      <h2>Lo que quiero decirte</h2>
+      <ul class="love-list">
+        <li>Gracias por parar mi mundo aquel día sin siquiera saberlo.</li>
+        <li>Gracias por darle color rosa a cada rincón de mi vida.</li>
+        <li>Gracias por estos siete meses que se sienten como el inicio de algo eterno.</li>
+        <li>Gracias por ser la razón por la que sonrío sin motivo aparente.</li>
+        <li>Gracias por elegirme, todos los días, una y otra vez.</li>
+        <li>Gracias, mi cuchocha, por ser mi lugar favorito al cual volver.</li>
+        <li>Gracias, cerquillito, por enseñarme que el amor también se siente tranquilo.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="page closing">
+    <div class="stars"></div>
+    <div class="content-box fade-in">
+      <h2>Hoy, celebrando un año de ti</h2>
+      <p>
+        Hoy se cumple un año desde que te conocí, y siete meses desde que decidimos
+        escribir esta historia juntos. Quiero que sepas que cada segundo a tu lado
+        ha valido la pena, que mi vida antes de ti era solo un borrador esperando
+        que tú llegaras a darle sentido.
+      </p>
+      <p class="signature">Te amo, Olenka, mi cuchocha, mi cerquillito.<br>Gracias por existir y por elegir quedarte.</p>
+      <div class="big-heart">♡</div>
+      <button id="confetti-btn" class="confetti-btn">Toca aquí ♡</button>
+    </div>
+  </section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
